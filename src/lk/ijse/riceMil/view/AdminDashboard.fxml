@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.AdminDashboardController">
+   <children>
+      <Pane prefHeight="74.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);">
+         <children>
+            <Label layoutX="246.0" layoutY="13.0" text="Admin Dashboard" textFill="#f2ecec">
+               <font>
+                  <Font name="Rockwell Bold" size="37.0" />
+               </font>
+            </Label>
+            <Text fx:id="txtDate" fill="#f5eaea" layoutX="683.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="203.6708984375">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtTime" fill="#f8f4f4" layoutX="919.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="203.6708984375">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="101.0" fitWidth="141.0" layoutX="19.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/adminIcon.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#1fff3f" layoutX="100.0" layoutY="17.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Pane layoutY="74.0" prefHeight="795.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);">
+         <children>
+            <Group layoutY="31.0">
+               <children>
+                  <JFXButton fx:id="btnCustomer" layoutY="2.0" onAction="#addCustomerOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Customer" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/customee.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutY="86.0">
+               <children>
+                  <JFXButton fx:id="btnItem" layoutY="3.0" onAction="#itemOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Item" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/item.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="48.0" layoutY="745.0">
+               <children>
+                  <Group layoutY="2.0">
+                     <children>
+                        <Group layoutX="-43.0" layoutY="1.0">
+                           <children>
+                              <JFXButton onAction="#backOnAction" prefHeight="45.0" prefWidth="270.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text=" " textFill="#f2e9e9">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </JFXButton>
+                              <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="106.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/exit.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Group>
+                     </children>
+                  </Group>
+               </children>
+            </Group>
+            <Group layoutX="-1.0" layoutY="145.0">
+               <children>
+                  <JFXButton fx:id="btnOrder" onAction="#orderOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Order" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/order.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="-1.0" layoutY="202.0">
+               <children>
+                  <JFXButton fx:id="btnPlaceOrder" onAction="#placeOrderOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Place Order" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Place%20Order.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <JFXButton fx:id="btnSupplier" layoutX="-1.0" layoutY="258.0" onAction="#supplierOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Supplier" textFill="#f2e9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Group layoutY="310.0">
+               <children>
+                  <JFXButton fx:id="btnEmployee" onAction="#employeeOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Employee" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/employee.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <JFXButton fx:id="btnAttendance" layoutX="-1.0" layoutY="365.0" onAction="#attendanceOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Attendance" textFill="#f2e9e9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Group layoutX="-1.0" layoutY="420.0">
+               <children>
+                  <JFXButton fx:id="btnSalary" onAction="#salaryOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Salary" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/attendance.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutY="473.0">
+               <children>
+                  <JFXButton fx:id="btnPurchaseOrder" onAction="#purchaseOrderOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="               Manage Purchase Order" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/purchase%20order.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="-1.0" layoutY="529.0">
+               <children>
+                  <JFXButton fx:id="btnDeliverOrder" onAction="#deliverOrderOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Deliver Order" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Place%20Order.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="-1.0" layoutY="584.0">
+               <children>
+                  <JFXButton fx:id="btnPayment" onAction="#paymentOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Manage Payment" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/payment.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="-1.0" layoutY="636.0">
+               <children>
+                  <JFXButton fx:id="btnDetails" layoutY="3.0" onAction="#detailOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Company Details" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/detail.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutY="691.0">
+               <children>
+                  <JFXButton fx:id="btnReport" layoutY="2.0" onAction="#reportOnAction" prefHeight="45.0" prefWidth="284.0" style="-fx-background-color: linear-gradient(to right, #1d4350, #a43931);" text="Report" textFill="#f2e9e9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="21.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/report.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="24.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/upplier.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="82.0" layoutX="21.0" layoutY="365.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/employee.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <AnchorPane fx:id="main" layoutX="285.0" layoutY="73.0" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: White;" />
+   </children>
+</AnchorPane>

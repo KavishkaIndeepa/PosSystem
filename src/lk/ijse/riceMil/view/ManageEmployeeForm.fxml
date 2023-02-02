@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.ManageEmployeeFormController">
+   <children>
+      <TextField fx:id="txtName" layoutX="367.0" layoutY="184.0" onKeyTyped="#nameKeyOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="377.0" layoutY="186.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Name" />
+      <TextField fx:id="txtAddress" layoutX="620.0" layoutY="184.0" onKeyTyped="#addressKeyOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="629.0" layoutY="186.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Address" />
+      <TextField fx:id="txtMobilNumber" layoutX="97.0" layoutY="259.0" onKeyTyped="#numberKeyOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="107.0" layoutY="259.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Mobile Number" />
+      <TextField fx:id="txtNic" layoutX="97.0" layoutY="179.0" onAction="#nicOnAction" onKeyTyped="#nicKeyOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="109.0" layoutY="178.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC" />
+      <TextField fx:id="txtPassword" layoutX="629.0" layoutY="259.0" onKeyTyped="#passwordKeyOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="639.0" layoutY="260.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Password" />
+      <TextField fx:id="txtUsername" layoutX="367.0" layoutY="259.0" onKeyTyped="#usernameKeyOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="377.0" layoutY="261.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Username" />
+      <JFXButton layoutX="380.0" layoutY="78.0" onAction="#saveOnAction" style="-fx-background-color: #ffdd59;" text="Save" />
+      <JFXButton layoutX="482.0" layoutY="78.0" onAction="#updateOnAction" style="-fx-background-color: #0be881;" text="Update" />
+      <JFXButton layoutX="607.0" layoutY="78.0" onAction="#deleteOnAction" style="-fx-background-color: #ff3f34;" text="Delete" />
+      <TableView fx:id="tblEmployee" layoutX="68.0" layoutY="426.0" prefHeight="272.0" prefWidth="787.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="157.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="149.0" text="Address" />
+            <TableColumn fx:id="colMobileNumber" prefWidth="124.0" text="Mobile Number" />
+            <TableColumn fx:id="colUsername" prefWidth="133.0" text="Username" />
+            <TableColumn fx:id="colPassword" prefWidth="109.0" text="Password" />
+            <TableColumn fx:id="colNic" prefWidth="113.0" text="NIC" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="745.0" layoutY="331.0" onAction="#clearOnAction" style="-fx-background-color: #ff3f34;" text="Clear" />
+      <Label fx:id="lblNicWrong" layoutX="102.0" layoutY="217.0" prefHeight="21.0" prefWidth="180.0" text=" " textFill="#da1313" />
+      <Label fx:id="lblNameWrong" layoutX="372.0" layoutY="224.0" prefHeight="21.0" prefWidth="180.0" text=" " textFill="#da1313" />
+      <Label fx:id="lblAddressWrong" layoutX="625.0" layoutY="224.0" prefHeight="21.0" prefWidth="180.0" text=" " textFill="#da1313" />
+      <Label fx:id="lblNumWrong" layoutX="102.0" layoutY="302.0" prefHeight="21.0" prefWidth="180.0" text=" " textFill="#da1313" />
+      <Label fx:id="lblUNameWrong" layoutX="368.0" layoutY="302.0" prefHeight="21.0" prefWidth="180.0" text=" " textFill="#da1313" />
+      <Label fx:id="lblPasswordWrong" layoutX="634.0" layoutY="302.0" prefHeight="21.0" prefWidth="180.0" text=" " textFill="#da1313" />
+   </children>
+</AnchorPane>

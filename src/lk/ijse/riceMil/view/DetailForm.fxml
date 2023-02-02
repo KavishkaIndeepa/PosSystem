@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="299.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.DetailFormController">
+   <children>
+      <Label fx:id="lblName" layoutX="163.0" layoutY="41.0" prefHeight="24.0" prefWidth="370.0" text="Guruge Rice Mill">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="41.0" prefHeight="24.0" prefWidth="79.0" text="Name :">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="92.0" prefHeight="24.0" prefWidth="100.0" text="Address :">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAddress" layoutX="163.0" layoutY="92.0" prefHeight="24.0" prefWidth="382.0" text="Gonapinuwala, Hikkaduwa">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="138.0" prefHeight="24.0" prefWidth="100.0" text="Tel No :">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTelNo" layoutX="163.0" layoutY="138.0" prefHeight="24.0" prefWidth="382.0" text="0912278813">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="184.0" prefHeight="24.0" prefWidth="100.0" text="E_Mail :">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEMail" layoutX="163.0" layoutY="184.0" prefHeight="24.0" prefWidth="382.0" text="guruge@gmail.com">
+         <font>
+            <Font name="Rockwell Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="241.0" layoutY="237.0" onAction="#okOnAction" prefHeight="38.0" prefWidth="79.0" style="-fx-background-color: #2c3e50; -fx-background-radius: 20;" text="Ok" textAlignment="CENTER" textFill="#ebeaea">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.SalaryFormController">
+   <children>
+      <TextField fx:id="txtNic" layoutX="93.0" layoutY="278.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="100.0" layoutY="273.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC" />
+      <TextField fx:id="txtSalaryId" layoutX="93.0" layoutY="160.0" onAction="#idOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="100.0" layoutY="155.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Salary Id" />
+      <TextField fx:id="txtPayment" layoutX="635.0" layoutY="283.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="642.0" layoutY="278.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Payment" />
+      <Group layoutX="299.0" layoutY="166.0" />
+      <JFXButton layoutX="528.0" layoutY="161.0" onAction="#saveOnAction" style="-fx-background-color: #ffdd59;" text="Save" />
+      <JFXButton layoutX="635.0" layoutY="161.0" onAction="#updateOnAction" style="-fx-background-color: #0be881;" text="Update" />
+      <JFXButton layoutX="757.0" layoutY="161.0" onAction="#deleteOnAction" style="-fx-background-color: #ff3f34;" text="Delete" />
+      <TableView fx:id="tblSalary" layoutX="104.0" layoutY="460.0" prefHeight="254.0" prefWidth="723.0">
+        <columns>
+          <TableColumn fx:id="colSalaryId" prefWidth="154.0" text="Salary id" />
+          <TableColumn fx:id="colNic" prefWidth="211.0" text="NIC" />
+            <TableColumn fx:id="colDate" prefWidth="188.0" text="Date" />
+            <TableColumn fx:id="colPayment" prefWidth="166.0" text="Payment" />
+        </columns>
+      </TableView>
+      <TextField layoutX="344.0" layoutY="282.0" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <JFXDatePicker fx:id="txtDate" layoutX="367.0" layoutY="283.0" />
+      <Text layoutX="355.0" layoutY="284.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Date" />
+      <JFXButton layoutX="776.0" layoutY="398.0" onAction="#clearOnAction" style="-fx-background-color: #ff3f34;" text="Clear" textFill="#f8efef">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblDate" layoutX="367.0" layoutY="284.0" prefHeight="31.0" prefWidth="158.0" text=" " />
+      <JFXButton layoutX="719.0" layoutY="744.0" onAction="#payOnAction" prefHeight="37.0" prefWidth="77.0" style="-fx-background-color: #0be881;" text="Pay" />
+   </children>
+</AnchorPane>

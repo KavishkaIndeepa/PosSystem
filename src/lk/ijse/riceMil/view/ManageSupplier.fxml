@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.ManageSupplierController">
+   <children>
+      <TextField fx:id="txtTelNO" layoutX="132.0" layoutY="307.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <TextField fx:id="txtName" layoutX="132.0" layoutY="205.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text fill="#1b1919" layoutX="144.0" layoutY="204.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Name" />
+      <TextField fx:id="txtAddress" layoutX="543.0" layoutY="201.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text fill="#1b1919" layoutX="560.0" layoutY="197.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Address" />
+      <Text fill="#1b1919" layoutX="144.0" layoutY="307.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Tel No" />
+      <TextField fx:id="txtStatues" layoutX="543.0" layoutY="303.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text fill="#1b1919" layoutX="555.0" layoutY="304.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Statues" />
+      <TextField fx:id="txtNic" layoutX="108.0" layoutY="110.0" onAction="#nicOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text fill="#1b1919" layoutX="120.0" layoutY="112.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC" />
+      <JFXButton layoutX="469.0" layoutY="107.0" onAction="#saveOnAction" style="-fx-background-color: #ffdd59;" text="Save" />
+      <JFXButton layoutX="560.0" layoutY="107.0" onAction="#updateOnAction" style="-fx-background-color: #0be881;" text="Update" />
+      <JFXButton layoutX="669.0" layoutY="107.0" onAction="#deleteOnAction" style="-fx-background-color: #ff3f34;" text="Delete" />
+      <TableView fx:id="tblSupplier" layoutX="117.0" layoutY="448.0" prefHeight="275.0" prefWidth="714.0">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="149.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="149.0" text="Address" />
+            <TableColumn fx:id="colTelNo" prefWidth="145.0" text="Tel No" />
+            <TableColumn fx:id="colStatues" prefWidth="132.0" text="Statues" />
+            <TableColumn fx:id="colNic" prefWidth="138.0" text="NIC" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="732.0" layoutY="369.0" onAction="#clearOnAction" style="-fx-background-color: #ff3f34;" text="Clear" />
+   </children>
+</AnchorPane>

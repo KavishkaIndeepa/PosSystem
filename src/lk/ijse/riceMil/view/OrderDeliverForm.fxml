@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.OrderDeliverFormController">
+   <children>
+      <Label layoutX="37.0" layoutY="93.0" text="Purchase Order Id">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPOrderId" layoutX="207.0" layoutY="95.0" prefHeight="21.0" prefWidth="105.0" />
+      <Label layoutX="478.0" layoutY="93.0" text="Purchase Order Date">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPOrderDate" layoutX="685.0" layoutY="95.0" prefHeight="21.0" prefWidth="156.0" />
+      <Label layoutX="32.0" layoutY="182.0" text="Supplier Nic">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="473.0" layoutY="182.0" text="Supplier Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierName" layoutX="645.0" layoutY="184.0" prefHeight="21.0" prefWidth="191.0" />
+      <JFXComboBox fx:id="cmbSupplierNic" layoutX="157.0" layoutY="179.0" onAction="#nicOnAction" onMouseEntered="#nicEnterOnAction" prefHeight="31.0" prefWidth="176.0" />
+      <Label layoutX="32.0" layoutY="257.0" text="Item Code">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemCode" layoutX="21.0" layoutY="290.0" onAction="#cmbItemOnAction" prefHeight="31.0" prefWidth="123.0" />
+      <Label layoutX="238.0" layoutY="254.0" text="Description">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblItemName" layoutX="245.0" layoutY="306.0" prefHeight="21.0" prefWidth="81.0" />
+      <Label layoutX="548.0" layoutY="252.0" text="Qty On Hand">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="422.0" layoutY="255.0" text="Price">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="762.0" layoutY="251.0" text="Qty">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" layoutX="414.0" layoutY="306.0" prefHeight="21.0" prefWidth="54.0" />
+      <Label fx:id="lblQtyOnHand" layoutX="571.0" layoutY="306.0" prefHeight="21.0" prefWidth="54.0" />
+      <TextField fx:id="txtQty" layoutX="749.0" layoutY="301.0" onAction="#qtyOnAction" prefHeight="31.0" prefWidth="81.0" />
+      <JFXButton layoutX="733.0" layoutY="382.0" onAction="#AddToDiliverOnAction" style="-fx-background-color: #3498db;" text="Add to Diliver" textFill="#f2eeee" />
+      <TableView fx:id="tblOrderDeliver" layoutX="14.0" layoutY="474.0" prefHeight="200.0" prefWidth="897.0">
+         <columns>
+            <TableColumn fx:id="colItemCode" prefWidth="135.0" text="Item Code" />
+            <TableColumn fx:id="colName" prefWidth="193.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="131.0" text="Qty" />
+            <TableColumn fx:id="colUnitePrice" prefWidth="131.0" text="Unite Price" />
+            <TableColumn fx:id="colTotal" prefWidth="183.0" text="Total" />
+            <TableColumn fx:id="colAction" prefWidth="123.0" text="Action" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="564.0" layoutY="719.0" onAction="#purchaseOrderOnAction" prefHeight="45.0" prefWidth="129.0" style="-fx-background-color: linear-gradient(to right, #536976, #292e49);;" text="Purchase Order" textFill="#f5f2f2" />
+      <JFXButton layoutX="749.0" layoutY="719.0" onAction="#billOnAction" prefHeight="45.0" prefWidth="129.0" style="-fx-background-color: linear-gradient(to right, #4cb8c4, #3cd3ad);" text="Genarate Bill" textFill="#f5f2f2" />
+      <Label layoutX="55.0" layoutY="722.0" text="Total">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" layoutX="126.0" layoutY="724.0" prefHeight="21.0" prefWidth="70.0" />
+      <JFXButton layoutX="379.0" layoutY="179.0" onAction="#newOnAction" style="-fx-background-color: #2ecc71;" text="New" textFill="#f5f2f2" />
+   </children>
+</AnchorPane>

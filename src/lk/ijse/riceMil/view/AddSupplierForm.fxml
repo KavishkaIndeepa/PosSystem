@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="456.0" prefWidth="471.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.AddSupplierController">
+   <children>
+      <TextField fx:id="txtName" layoutX="113.0" layoutY="136.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="128.0" layoutY="134.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Name" />
+      <TextField fx:id="txtAddress" layoutX="113.0" layoutY="201.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="126.0" layoutY="199.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Address" />
+      <TextField fx:id="txtTelNo" layoutX="113.0" layoutY="270.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="128.0" layoutY="268.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Tel No" />
+      <TextField fx:id="txtNic" layoutX="113.0" layoutY="73.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="128.0" layoutY="71.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC" />
+      <JFXButton layoutX="168.0" layoutY="382.0" onAction="#addOnAction" prefHeight="49.0" prefWidth="91.0" style="-fx-background-color: #ffdd59; -fx-background-radius: 20;" text="Add" />
+      <TextField fx:id="txtStatues" layoutX="113.0" layoutY="338.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="128.0" layoutY="336.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Statues" />
+   </children>
+</AnchorPane>

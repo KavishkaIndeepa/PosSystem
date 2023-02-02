@@ -1,0 +1,12 @@
+.sidebarItem:hover {
+    //-fx-background-color: linear-gradient(to right, #ef3b36, #ffffff);
+    -fx-background-color: yellow;
+    -fx-border-color: TRANSPARENT;
+    -fx-border-width: 0px 0px 0px 6px;
+}
+
+
+.button {
+    -fx-background-color: #3464eb;
+    -fx-text-fill: white;
+}

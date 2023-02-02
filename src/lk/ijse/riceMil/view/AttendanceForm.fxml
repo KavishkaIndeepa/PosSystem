@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.AttendanceFormController">
+   <children>
+      <TextField fx:id="txtNic" layoutX="130.0" layoutY="212.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="137.0" layoutY="207.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC" />
+      <TextField fx:id="txtAttendanceId" layoutX="130.0" layoutY="106.0" onAction="#idOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="137.0" layoutY="101.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Attendance Id" />
+      <TextField fx:id="txtName" layoutX="544.0" layoutY="217.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="556.0" layoutY="213.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Name" />
+      <Group layoutX="130.0" layoutY="315.0">
+         <children>
+            <TextField style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+            <JFXDatePicker fx:id="txtDate" layoutX="23.0" layoutY="1.0" />
+            <Label fx:id="lblDate" layoutX="14.0" layoutY="2.0" prefHeight="34.0" prefWidth="168.0" />
+         </children>
+      </Group>
+      <Text layoutX="137.0" layoutY="310.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Date" />
+      <TextField layoutX="544.0" layoutY="315.0" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="551.0" layoutY="310.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Time" />
+      <JFXButton layoutX="609.0" layoutY="81.0" onAction="#saveOnAction" prefHeight="58.0" prefWidth="124.0" style="-fx-background-color: #ffdd59; -fx-background-radius: 30;" text="Save" textFill="#362f2f">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblAttendance" layoutX="96.0" layoutY="470.0" prefHeight="254.0" prefWidth="723.0">
+        <columns>
+          <TableColumn fx:id="colAttendanceId" prefWidth="140.0" text="Attendance Id" />
+          <TableColumn fx:id="colName" prefWidth="165.0" text="Name" />
+            <TableColumn fx:id="colDate" prefWidth="173.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="124.0" text="Time" />
+            <TableColumn fx:id="colNic" prefWidth="120.0" text="NIC" />
+        </columns>
+      </TableView>
+      <JFXTimePicker fx:id="txtTime" layoutX="567.0" layoutY="317.0" />
+      <Label fx:id="lblTime" layoutX="552.0" layoutY="313.0" prefHeight="34.0" prefWidth="168.0" />
+      <JFXButton layoutX="713.0" layoutY="389.0" onAction="#clearOnAction" prefHeight="43.0" prefWidth="93.0" style="-fx-background-color: #ff3f34; -fx-background-radius: 30;" text="Clear" textFill="#ebe7e7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

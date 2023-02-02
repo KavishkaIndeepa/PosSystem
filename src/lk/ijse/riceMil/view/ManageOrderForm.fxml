@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.ManageOrderFormController">
+   <children>
+      <Group layoutX="307.0" layoutY="107.0" />
+      <TextField fx:id="txtNic" layoutX="659.0" layoutY="126.0" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="672.0" layoutY="122.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtSearchOrder" layoutX="86.0" layoutY="128.0" onAction="#idOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="94.0" layoutY="130.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Oder Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="728.0" layoutY="216.0" onAction="#updateOnAction" style="-fx-background-color: #0be881;" text="Update">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblOrder" layoutX="188.0" layoutY="282.0" prefHeight="437.0" prefWidth="516.0">
+        <columns>
+          <TableColumn fx:id="colOrderId" prefWidth="154.0" text="Order Id" />
+          <TableColumn fx:id="colDate" prefWidth="194.0" text="Date" />
+            <TableColumn fx:id="colNic" prefWidth="167.0" text="Nic" />
+        </columns>
+      </TableView>
+      <TextField layoutX="339.0" layoutY="128.0" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <JFXDatePicker fx:id="txtDate" layoutX="364.0" layoutY="129.0" />
+      <Text layoutX="355.0" layoutY="127.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Date" wrappingWidth="41.08349609375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDate" layoutX="347.0" layoutY="131.0" prefHeight="31.0" prefWidth="171.0" text=" " />
+   </children>
+</AnchorPane>

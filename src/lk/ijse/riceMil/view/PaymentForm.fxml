@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.PaymentFormController">
+   <children>
+      <TextField fx:id="txtNic" layoutX="631.0" layoutY="306.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="650.0" layoutY="303.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="NIC" />
+      <TextField fx:id="txtPaymentId" layoutX="65.0" layoutY="183.0" onAction="#idOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="85.0" layoutY="179.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Payment Id" />
+      <Group layoutX="327.0" layoutY="281.0" />
+      <TextField fx:id="txtPayment" layoutX="387.0" layoutY="308.0" promptText="xxxx" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="406.0" layoutY="305.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Payment" />
+      <JFXButton layoutX="523.0" layoutY="147.0" onAction="#saveOnAction" style="-fx-background-color: #ffdd59;" text="Save" textFill="#362f2f">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="631.0" layoutY="147.0" onAction="#updateOnAction" style="-fx-background-color: #0be881;" text="Update" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="764.0" layoutY="147.0" onAction="#deleteOnAction" style="-fx-background-color: #ff3f34;" text="Delete" textFill="#2c2929">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblPayment" layoutX="74.0" layoutY="451.0" prefHeight="279.0" prefWidth="768.0">
+        <columns>
+          <TableColumn fx:id="colPaymentId" prefWidth="175.0" text="Payment Id" />
+          <TableColumn fx:id="colDate" prefWidth="196.0" text="Date" />
+            <TableColumn fx:id="colPayment" prefWidth="196.0" text="Payment" />
+            <TableColumn fx:id="colNic" prefWidth="200.0" text="NIC" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="785.0" layoutY="382.0" onAction="#clearOnAction" style="-fx-background-color: #ff3f34;" text="Clear" />
+      <JFXButton layoutX="743.0" layoutY="750.0" onAction="#payOnAction" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: #34495e;" text="Pay" textFill="#f2e6e6" />
+      <TextField layoutX="74.0" layoutY="305.0" style="-fx-border-color: black; -fx-background-radius: 50; -fx-border-radius: 50;" />
+      <Text layoutX="88.0" layoutY="306.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Date" />
+      <JFXDatePicker fx:id="txtDate" layoutX="93.0" layoutY="306.0" />
+      <Label fx:id="lblDate" layoutX="88.0" layoutY="308.0" prefHeight="28.0" prefWidth="162.0" text=" " />
+   </children>
+</AnchorPane>

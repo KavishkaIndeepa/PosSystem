@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="870.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to left, #348f50, #56b4d3);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.LoginFormController">
+   <children>
+      <Pane layoutX="713.0" layoutY="174.0" prefHeight="543.0" prefWidth="370.0" style="-fx-background-color: linear-gradient(to left, #acb6e5, #86fde8);; -fx-background-radius: 30; -fx-border-radius: 30;">
+         <children>
+            <JFXTextField fx:id="txtUserName" layoutX="96.0" layoutY="228.0" onAction="#UserNameOnAction" onKeyTyped="#UserNameOnKeyType" prefHeight="31.0" prefWidth="257.0" promptText="Username" />
+            <JFXPasswordField fx:id="txtPassword" layoutX="96.0" layoutY="330.0" onAction="#passwordOnAction" onKeyTyped="#PasswordOnType" prefHeight="31.0" prefWidth="257.0" promptText="Password" />
+            <JFXButton fx:id="btnLog" layoutX="151.0" layoutY="423.0" onAction="#logingOnAction" prefHeight="62.0" prefWidth="100.0" style="-fx-background-radius: 30;" stylesheets="@../Style/CSS.css" text="Login" textFill="#f5efef">
+               <font>
+                  <Font name="Rockwell Bold" size="21.0" />
+               </font>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="126.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/rice_6.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblInvalidPassword" layoutX="70.0" layoutY="379.0" prefHeight="21.0" prefWidth="279.0" textFill="#e40b0b" />
+            <Label fx:id="lblInvalidName" layoutX="70.0" layoutY="280.0" prefHeight="21.0" prefWidth="279.0" textFill="#f20d0d" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="722.0" fitWidth="619.0" layoutX="50.0" layoutY="85.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/1.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="1010.0" layoutY="776.0" onAction="#logOutOnAction" prefHeight="62.0" prefWidth="89.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/10.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

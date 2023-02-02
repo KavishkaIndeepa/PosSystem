@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.ManageItemFormController">
+   <children>
+      <TextField fx:id="txtSearchCode" layoutX="66.0" layoutY="98.0" onAction="#codeOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="73.0" layoutY="102.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Code" />
+      <TextField fx:id="txtDescription" layoutX="120.0" layoutY="216.0" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="127.0" layoutY="219.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Description" />
+      <TextField fx:id="txtUnitePrice" layoutX="530.0" layoutY="219.0" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="536.0" layoutY="220.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Unit Price" />
+      <TextField fx:id="txtQty" layoutX="536.0" layoutY="318.0" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="548.0" layoutY="319.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Qty" />
+      <JFXButton layoutX="462.0" layoutY="94.0" onAction="#saveOnAction" style="-fx-background-color: #ffdd59;" text="Save" />
+      <JFXButton layoutX="549.0" layoutY="94.0" onAction="#updateOnAction" style="-fx-background-color: #0be881;" text="Update" />
+      <JFXButton layoutX="665.0" layoutY="94.0" onAction="#deleteOnAction" style="-fx-background-color: #ff3f34;" text="Delete" />
+      <TableView fx:id="tblItem" layoutX="66.0" layoutY="432.0" prefHeight="288.0" prefWidth="784.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="130.0" text="Code" />
+          <TableColumn fx:id="colDescription" prefWidth="192.0" text="Description" />
+            <TableColumn fx:id="colUnitePrice" prefWidth="192.0" text="Unit Price" />
+            <TableColumn fx:id="colDate" prefWidth="135.0" text="Date" />
+            <TableColumn fx:id="colQty" prefWidth="135.0" text="Qty" />
+        </columns>
+      </TableView>
+      <Group layoutX="167.0" layoutY="204.0" />
+      <Group layoutX="426.0" layoutY="193.53619384765625" />
+      <TextField layoutX="120.0" layoutY="318.0" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="127.0" layoutY="320.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Update Date" />
+      <JFXDatePicker fx:id="txtUpdateDate" layoutX="139.0" layoutY="318.0" />
+      <Label fx:id="lblDate" layoutX="132.0" layoutY="324.0" prefHeight="21.0" prefWidth="168.0" text=" " />
+      <JFXButton layoutX="748.0" layoutY="367.0" onAction="#clearOnAction" style="-fx-background-color: #ff3f34;" text="Clear" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" prefHeight="795.0" prefWidth="915.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.riceMil.controller.PurchaseOrderFormController">
+   <children>
+      <Group layoutX="307.0" layoutY="107.0" />
+      <TextField fx:id="txtSearchPurchaseOrder" layoutX="86.0" layoutY="128.0" onAction="#idOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="94.0" layoutY="130.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Purchase Oder Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="690.0" layoutY="215.0" onAction="#updateOnAction" style="-fx-background-color: #0be881;" text="Update" />
+      <TableView fx:id="tblPurchaseOrder" layoutX="147.0" layoutY="289.0" prefHeight="459.0" prefWidth="639.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="248.0" text="Purchase Order Id" />
+          <TableColumn fx:id="colDate" prefWidth="161.0" text="Date" />
+            <TableColumn fx:id="ColNic" prefWidth="229.0" text="Nic" />
+        </columns>
+      </TableView>
+      <Group layoutX="56.0" layoutY="161.76779174804688" />
+      <TextField layoutX="345.0" layoutY="128.0" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <JFXDatePicker fx:id="txtDate" layoutX="370.0" layoutY="129.0" />
+      <Text layoutX="361.0" layoutY="126.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Date" wrappingWidth="41.08349609375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="labDate" layoutX="353.0" layoutY="128.0" prefHeight="31.0" prefWidth="172.0" text=" " />
+      <TextField fx:id="txtNic" layoutX="641.0" layoutY="123.0" onAction="#idOnAction" promptText="xxxx" style="-fx-border-color: black; -fx-border-radius: 50; -fx-background-radius: 50;" />
+      <Text layoutX="649.0" layoutY="123.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="6.0" text="Nic" wrappingWidth="41.0835000872612">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
